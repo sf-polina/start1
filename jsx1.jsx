@@ -1,4 +1,4 @@
-﻿let myButton = document.querySelector('button'); 
+﻿let myButton = document.getElementById('name'); 
 let myHeading = document.querySelector('h3');
 
 function setUserName() {
@@ -51,16 +51,25 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0px";
 }
+
+
+
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     if (document.documentElement.scrollTop > 20) {//количество пикселей после которой появится кнопка
         document.getElementById("myBtn").style.display = "block";
+        document.getElementById("navbar").style.top = "0";
     } else {
         document.getElementById("myBtn").style.display = "none";
+        document.getElementById("navbar").style.top = "-50px";
     }
 }
 
 function topFunction() {
     document.documentElement.scrollTop = 0;
 }
+
+
+
