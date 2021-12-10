@@ -1,0 +1,218 @@
+* {
+  /* height: 40vh;   */
+}
+
+.home {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  height: 50vh;
+  /* z-index: 999; */
+  background-color: #000000;
+}
+
+.flip-container,
+.flip-container1 {
+    /* height: 50vh; */
+  perspective: 1000px;
+  /* flex: 0 1 auto; */
+  margin: 1px;
+  height: 250px;
+  width: 350px;
+  /* min-width: calc(50vw - 10px); */
+  /* min-height: calc(50vh - 10px); */
+}
+
+.flip-container:hover .flipper {
+  transform: rotateY(180deg);
+  /* transform: ; */
+}
+
+.flip-container1:hover .flipper {
+  transform: rotateX(180deg);
+  /* transform: ; */
+}
+
+/* .flip-container, */
+
+.flipper {
+    padding: 5px;
+    height: 50vh;
+  transition: 1.5s;
+  transform-style: preserve-3d;
+}
+
+.front1,
+.front2,
+.front3,
+.front4,
+.front5,
+.front6,
+.front7,.front8,.front9,
+.back1,
+.back2,
+.back3,
+.back4,
+.back5,
+.back6,
+.back7,
+.back8,
+.back9 {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+.front1 {
+  /* background-color: brown; */
+  background-image : url(pra1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.back1 {
+  /* background-color: aqua; */
+  transform: rotateY(180deg);
+  background-image: url(pra1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #000000;
+  /* opacity: 0.5; */
+}
+
+.front2 {
+  /* background-color: forestgreen; */
+  background-image: url(pra2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.back2 {
+  /* background-color: fuchsia; */
+  transform: rotateX(180deg);
+  background-image: url(https://rtvi.com/upload/iblock/e24/e241c26e7f5b8293400437285c1da14f.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.front3 {
+  /* background-color: gold; */
+  background-image: url(pra3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.back3 {
+  background-color: aquamarine;
+  transform: rotateY(180deg);
+  background-image: url();
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.front4 {
+  /* background-color: gray; */
+  background-image: url(pra4.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.back4 {
+  background-color: ghostwhite;
+  background-image: url(http://nickjr-intl.mtvnimages.com/uri/mgid:arc:content:nickelodeon.ru:cecf82d2-9894-43e9-8b0e-aa865920e0a9?stage=live&ep=nickelodeon.ru);
+  transform: rotateY(180deg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.front5 {
+    /* background-color: gray; */
+    background-image: url(pra5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .back5 {
+    background-color: ghostwhite;
+    background-image: url(http://nickjr-intl.mtvnimages.com/uri/mgid:arc:content:nickelodeon.ru:cecf82d2-9894-43e9-8b0e-aa865920e0a9?stage=live&ep=nickelodeon.ru);
+    transform: rotateY(180deg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .front6 {
+    /* background-color: gray; */
+    background-image: url(pra6.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .back6 {
+    background-color: ghostwhite;
+    background-image: url(http://nickjr-intl.mtvnimages.com/uri/mgid:arc:content:nickelodeon.ru:cecf82d2-9894-43e9-8b0e-aa865920e0a9?stage=live&ep=nickelodeon.ru);
+    transform: rotateY(180deg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .front7 {
+    /* background-color: gray; */
+    background-image: url(pra7.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .back7 {
+    background-color: ghostwhite;
+    background-image: url(http://nickjr-intl.mtvnimages.com/uri/mgid:arc:content:nickelodeon.ru:cecf82d2-9894-43e9-8b0e-aa865920e0a9?stage=live&ep=nickelodeon.ru);
+    transform: rotateY(180deg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .front8 {
+    /* background-color: gray; */
+    background-image: url(pra8.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .back8 {
+    background-color: ghostwhite;
+    background-image: url(http://nickjr-intl.mtvnimages.com/uri/mgid:arc:content:nickelodeon.ru:cecf82d2-9894-43e9-8b0e-aa865920e0a9?stage=live&ep=nickelodeon.ru);
+    transform: rotateY(180deg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .front9 {
+    /* background-color: gray; */
+    background-image: url(pra9.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .back9 {
+    background-color: ghostwhite;
+    background-image: url(http://nickjr-intl.mtvnimages.com/uri/mgid:arc:content:nickelodeon.ru:cecf82d2-9894-43e9-8b0e-aa865920e0a9?stage=live&ep=nickelodeon.ru);
+    transform: rotateY(180deg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+.tx{
+    opacity: 1;
+}
